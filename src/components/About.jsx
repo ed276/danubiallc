@@ -34,10 +34,6 @@ const About = () => {
                             <strong>Hours:</strong> Monday - Sunday: 9:00 am - 7:00 pm<br />
                             <strong>Payments:</strong> Visa/Mastercard, Discover, American Express, Check, PayPal, Zelle, Venmo
                         </div>
-
-                        <div style={{ clear: 'both', textAlign: 'center', marginTop: '3rem' }}>
-                            <a href="#contact" className="btn btn-primary">Schedule Your Service</a>
-                        </div>
                     </div>
                 </div>
             </div>

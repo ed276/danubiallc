@@ -41,6 +41,9 @@ const Services = () => {
                         </div>
                     ))}
                 </div>
+                <div style={{ textAlign: 'center', marginTop: '4rem' }} className="animate-on-scroll delay-2">
+                    <a href="#contact" className="btn btn-primary">Schedule Your Service</a>
+                </div>
             </div>
         </section>
     );
