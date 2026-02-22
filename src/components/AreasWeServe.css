@@ -16,12 +16,18 @@
 }
 
 .areas-content {
-    padding: 3rem;
+    padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .areas-content {
+        padding: 3rem;
+    }
 }
 
 .areas-content h2 {
     font-size: clamp(2.5rem, 5vw, 3.5rem);
-    color: var(--color-brand);
+    color: var(--color-accent);
     margin-bottom: 0.5rem;
     letter-spacing: -1px;
 }
@@ -35,8 +41,14 @@
 
 .areas-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 1rem;
+}
+
+@media (min-width: 600px) {
+    .areas-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .areas-list li {
