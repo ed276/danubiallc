@@ -1,0 +1,43 @@
+.services {
+    background-color: var(--color-bg-alt);
+}
+
+.service-card {
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.service-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.service-card:hover .service-img img {
+    transform: scale(1.1);
+}
+
+.service-content {
+    padding: 2rem;
+    flex-grow: 1;
+}
+
+.service-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--color-brand);
+}
+
+.service-content p {
+    color: var(--color-text-light);
+    line-height: 1.6;
+}

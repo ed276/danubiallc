@@ -1,0 +1,43 @@
+.reviews {
+    background-color: var(--color-bg-alt);
+}
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--glass-border);
+    padding-bottom: 1rem;
+}
+
+.reviewer-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--color-brand-light);
+}
+
+.review-meta h4 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    color: var(--color-text);
+}
+
+.stars-img {
+    height: 18px;
+    object-fit: contain;
+}
+
+.review-body p {
+    font-style: italic;
+    color: var(--color-text-light);
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
