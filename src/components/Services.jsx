@@ -5,7 +5,7 @@ const Services = () => {
         {
             title: "Vacation Home Cleaning",
             desc: "Do you have a vacation rental that needs to be sparkling for your next guests? Let us help get your home sparkling clean.",
-            img: "https://imagedelivery.net/m5BQ9NwISdGmaMKgfNT6sA/6f38f853-bebc-4029-56bb-c66653ca5d00/public"
+            img: "https://imagedelivery.net/m5BQ9NwISdGmaMKgfNT6sA/5b9e0521-4be3-47c5-b9d1-52f4b2b24f00/public"
         },
         {
             title: "Residential Cleaning",

@@ -9,7 +9,7 @@ const Footer = () => {
                         <img src="https://imagedelivery.net/m5BQ9NwISdGmaMKgfNT6sA/8aeca030-d36b-49b5-eb9e-3e3347023b00/public" alt="Danubia LLC Logo" className="footer-logo" />
                         <p>Danubia, LLC.: The Cleanest Cleaning</p>
                         <p className="footer-contact">Contact us today for a free estimate or to schedule a cleaning.</p>
-                        <a href="tel:+1000000000" className="btn btn-primary mt-3">Call Us Now</a>
+                        <a href="tel:5555555555" className="btn btn-primary mt-3">Call Us Now</a>
                     </div>
                     <div className="footer-links">
                         <h3>Quick Links</h3>

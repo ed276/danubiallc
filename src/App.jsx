@@ -9,6 +9,7 @@ import HowItWorks from './components/HowItWorks';
 import Reviews from './components/Reviews';
 import FAQ from './components/FAQ';
 import AreasWeServe from './components/AreasWeServe';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -39,6 +40,7 @@ function App() {
         <Reviews />
         <FAQ />
         <AreasWeServe />
+        <Contact />
       </main>
       <Footer />
     </>

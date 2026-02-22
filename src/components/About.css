@@ -3,20 +3,37 @@
     position: relative;
 }
 
-.about-grid {
-    align-items: center;
-}
-
-.about-content .section-title {
-    text-align: left;
-    margin-bottom: 2rem;
-    font-size: clamp(2rem, 4vw, 3rem);
-}
-
-.about-content p {
-    margin-bottom: 1.5rem;
-    color: var(--color-text-light);
+.about-body {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
     font-size: 1.1rem;
+    color: var(--color-text-light);
+    line-height: 1.8;
+}
+
+.about-body::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.about-video {
+    float: right;
+    width: 48%;
+    margin: 0 0 2rem 3rem;
+}
+
+.about-body p {
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .about-video {
+        float: none;
+        width: 100%;
+        margin: 0 0 2rem 0;
+    }
 }
 
 .contact-info {
