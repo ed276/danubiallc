@@ -25,32 +25,38 @@ const Contact = () => {
         if (step > 1) setStep(step - 1);
     };
 
-    const submitForm = (e) => {
+    const submitForm = async (e) => {
         e.preventDefault();
 
-        const subject = encodeURIComponent(`New Estimate Request: ${formData.service}`);
-        const body = encodeURIComponent(`Hello Danubia LLC,
+        try {
+            const response = await fetch('https://formspree.io/f/xqedygqw', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    _replyto: formData.email,
+                    _subject: `New Estimate Request: ${formData.service}`,
+                    Name: formData.name,
+                    Email: formData.email,
+                    Phone: formData.phone,
+                    Service_Type: formData.service,
+                    Preferred_Date: formData.date,
+                    Additional_Details: formData.details || 'None'
+                }),
+            });
 
-I would like to request a free estimate. 
-
-Service Details:
-- Type: ${formData.service}
-- Preferred Date: ${formData.date}
-
-Contact Details:
-- Name: ${formData.name}
-- Phone: ${formData.phone}
-- Email: ${formData.email}
-
-Additional Details: 
-${formData.details || 'None'}
-
-Thank you,
-${formData.name}`);
-
-        window.location.href = `mailto:danubiallc@gmail.com?subject=${subject}&body=${body}`;
-
-        setStep(4); // Success step
+            if (response.ok) {
+                setStep(4); // Success step
+            } else {
+                // If Formspree returns an error (e.g., spam detection)
+                alert("There was a problem submitting your request. Please try again.");
+            }
+        } catch (error) {
+            console.error("Form submission error:", error);
+            alert("There was a problem connecting to the server. Please check your internet connection and try again.");
+        }
     };
 
     return (
