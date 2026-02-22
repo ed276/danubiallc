@@ -33,6 +33,7 @@ const Footer = () => {
                 </div>
                 <div className="footer-bottom">
                     <p>&copy; {new Date().getFullYear()} Danubia LLC. All rights reserved.</p>
+                    <p className="designer-signature">MiltonHaines WebCraft</p>
                 </div>
             </div>
         </footer>
