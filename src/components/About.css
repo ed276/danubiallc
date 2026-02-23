@@ -29,10 +29,16 @@
 }
 
 @media (max-width: 768px) {
+    .about-body {
+        display: flex;
+        flex-direction: column;
+    }
+
     .about-video {
         float: none;
         width: 100%;
         margin: 0 0 2rem 0;
+        order: -1;
     }
 }
 
