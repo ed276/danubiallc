@@ -71,8 +71,8 @@ export default function Anniversary() {
 
                 {/* Thank-you message */}
                 <p className="anniv-message">
-                    Twenty-five years of early mornings, fresh linens, and doing things right —
-                    because the people who trust us with their homes deserve nothing less.{' '}
+                    Twenty-four-plus years of early mornings, fresh linens, and doing things right,
+                    because the people who trust us with their homes and their investments deserve nothing less.{' '}
                     To every homeowner who's handed us their keys, welcomed us back season after season,
                     and made us feel like part of the family —{' '}
                     <em>thank you.</em>{' '}
