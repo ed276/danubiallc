@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Header from './components/Header';
+import Anniversary from './components/Anniversary';
 import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
@@ -31,6 +32,7 @@ function App() {
   return (
     <>
       <Header />
+      <Anniversary />
       <main>
         <Hero />
         <About />
